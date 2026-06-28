@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>risk-pilot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="left-pad"></div>
+            <div class="calculator-container">
+                <h2 id="calculator-container-heading">/ Position Sizing Calculator</h2>
+                <div class="inputs">
+                    <div class="row">
+                        <label for="account-size-input">Account size</label>
+                    <input type="number" id="account-size-input" placeholder="₹ /-">
+                    </div>
+                    
+                    <div class="row">
+                    <label for="risk-input">Risk on capital</label>
+                    <input type="number" id="risk-input" placeholder="Risk in %">
+                    </div>
+
+                    <div class="row">
+                    <label for="entry-input">Entry price</label>
+                    <input type="number" id="entry-input" placeholder="Entry price">
+                    </div>
+
+                    <div class="row">
+                    <label for="sl-input">Stop loss price</label>
+                    <input type="number" id="sl-input" placeholder="SL price">
+                    </div>
+
+                    <div class="row">
+                    <label for="direction-input">Select Direction</label>
+                    <select name="direction" id="direction-input">
+                        <option value="" hidden>Direction</option>
+                        <option value="Long">Long</option>
+                        <option value="Short">Short</option>
+                    </select>
+                    </div>
+
+                </div>
+
+                <div class="input-result">
+                    <div class="seperator-bar"></div>
+                    <div class="result"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-container-heading"><h2>/ Live Crypto Prices</h2></div>
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
