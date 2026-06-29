@@ -109,6 +109,8 @@ body {
   width: 80%;
   border-radius: 7px;
   display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
 }
 .seperator-bar {
   height: 100%;
@@ -158,12 +160,12 @@ body {
 
 @media screen and (max-width: 500px) {
   .row {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .row input {
     height: 40px;
     width: 40%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .row select {
     height: 40px;
