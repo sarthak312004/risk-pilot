@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  min-height: 0;
 }
 .left-pad {
   height: 100%;
@@ -66,6 +67,7 @@ body {
   font-size: 1.3rem;
   color: #e2e2e2;
   left: 5px;
+
 }
 .right-container-heading h2 {
   font-family: var(--deftextfamily);
@@ -130,6 +132,15 @@ body {
     width: 90%;
     justify-self: center;
   }
+
+  .right-container .coin-card-container {
+    justify-content: center;
+}
+ .coin-card-container div {
+    height: 50px;
+    width: 130px !important;
+}
+
 }
 @media screen and (max-width: 741px) {
   .calculator-container {
@@ -175,4 +186,54 @@ body {
     font-size: 1rem;
     /* margin: 0px; */
   }
+}
+.coin-card-container{
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  gap: 15px;
+  padding-top: 15px;
+ 
+}
+.coin-card-container div{
+  height: 50px;
+  width: 45%;
+  border: 1px solid black;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 100ms ease-in;
+  font-family: var(--deftextfamily);
+  color: #272828;
+}
+.coin-card-container div h4, .coin-card-container div p{
+  font-size: 0.8rem;
+  margin: 0;
+}
+.coin-card-container div h4{
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 600;
+}
+.coin-card-container div:hover{
+  transform: translateY(-5%);
+  background-color: #cececede;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* transparent track */
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(194, 194, 194, 0.027); /* semi-transparent */
+  border-radius: 10px;
 }
