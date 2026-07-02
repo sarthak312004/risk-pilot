@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>risk-pilot</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -47,9 +48,12 @@
                 <div class="input-result">
                     <div class="seperator-bar"></div>
                     <div class="result">
-                        <p id="capital">Capital:</p>
-                        <p id="risk">Risk:</p>
-                        <p id="lot-size">Lot size:</p>
+                        <div id="p-tags">
+                            <p id="capital">Capital:</p>
+                            <p id="risk">Risk:</p>
+                            <p id="lot-size">Lot size:</p>
+                        </div>
+                        <canvas class="pie-chart"></canvas>
                     </div>
                 </div>
             </div>
